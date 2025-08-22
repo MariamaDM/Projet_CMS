@@ -1,11 +1,9 @@
 # Node / React
 frontend/node_modules
 frontend/build
-frontend/.env
 
 # Laravel
 backend/vendor
 backend/node_modules
-backend/.env
 backend/storage/*.key
 backend/.idea
