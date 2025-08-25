@@ -33,7 +33,7 @@ export default function Charts({
                                }) {
     // 📊 Transactions mensuelles
     const transactionsChart = {
-        labels: transactions.map((d) => d.mois || ""),
+        labels: transactions.map((d) => d.period || ""),
         datasets: [
             {
                 label: "Montant Transactions",

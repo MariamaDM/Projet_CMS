@@ -9,10 +9,10 @@ class VueTransactionController extends Controller
 {
     public function getEvolutionAnnuelle()
     {
-        $data = VueTransaction::select('mois')
+        $data = VueTransaction::select('period')
             ->selectRaw('SUM(total_montant) as total_montant')
-            ->groupBy('mois')
-            ->orderBy('mois')
+            ->groupBy('period')
+            ->orderBy('period')
             ->get();
 
         return response()->json($data);
